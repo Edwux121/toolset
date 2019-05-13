@@ -1,0 +1,36 @@
+$text-color: #FFF;
+$background-color: #343a40;
+
+body {
+    background-color: $background-color;
+}
+nav {
+    .form {
+        background-color: $background-color;
+    }
+}
+
+.carousel {
+    max-height: 400px;
+    img {
+        width: 80%;
+        height: 300px;
+        margin: 0px auto;
+    }
+}
+
+section {
+    color: $text-color;
+    article {
+        border: 2px solid;
+        border-radius: 5px;
+        text-align: center;
+        height: 200px;
+        margin: 7px;
+
+        button {
+            margin-top: 35px;
+            color: $text-color;
+        }
+    }
+}

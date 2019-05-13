@@ -1,0 +1,26 @@
+body {
+  background-color: #343a40; }
+
+nav .form {
+  background-color: #343a40; }
+
+.carousel {
+  max-height: 400px; }
+  .carousel img {
+    width: 80%;
+    height: 300px;
+    margin: 0px auto; }
+
+section {
+  color: #FFF; }
+  section article {
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+    margin: 7px; }
+    section article button {
+      margin-top: 35px;
+      color: #FFF; }
+
+/*# sourceMappingURL=main.css.map */
