@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 $text-color: #FFF;
 $background-color: #343a40;
 
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
 body {
-    background-color: $background-color;
+    
+    font-family: "Raleway";
 }
 nav {
+    background-color: #00cdcf;
+    a {
+        color: $text-color;
+    }
     .form {
-        background-color: $background-color;
+        background-color: #00cdcf;
+    }
+    .dropdown-menu {
+        background-color: #00cdcf;
+        a {
+            color: $text-color;
+        }
     }
 }
 
@@ -21,16 +40,45 @@ nav {
 
 section {
     color: $text-color;
-    article {
-        border: 2px solid;
-        border-radius: 5px;
-        text-align: center;
-        height: 200px;
-        margin: 7px;
-
+    background-color: #00cdcf;
+    .row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .modal-content {
+        background-color: $background-color;
         button {
-            margin-top: 35px;
+            color: $text-color;
+        }
+        button:hover {
             color: $text-color;
         }
     }
+    
+    article:hover {
+        @include transform(scale(1.1));
+        transition: all 0.3s ease;
+    }
+
+    article {
+        .card-body {
+            background-color: #FFF;
+            color: #000;
+        }
+    }
+}
+
+footer {
+    padding-top: 80px;
+    .contact-form h1{
+        padding:2em 1px;
+        color: #000; 
+       }
+       .contact-form .right{
+            max-width: 600px;
+        .form-control::placeholder{
+            color: #888;
+            font-size: 16px;
+        }
+       }
 }

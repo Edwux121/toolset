@@ -6,7 +6,7 @@
     </head>
     <body>
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="row">
                     <a class="navbar-brand" href="#">Tool-Set</a>
@@ -39,21 +39,10 @@
                         </ul>
                       </div>
                 </div>
-                <div class="row">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 form" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                </div>
             </div>
         </nav>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/img1.png" class="d-block">
@@ -65,66 +54,204 @@
                 <img src="img/img3.png" class="d-block">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
 
           <section>
             <div class="container">
-                <div class="row justify-content-md-center">
+                <div class="row justify-content-md-center tools">
                     <h2>Tools</h2>
                 </div>
                 <div class="row justify-content-md-center">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                     <article>
-                        <h5>Vagrant</h5>
-                        <span id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                        <br><button type="button" class="btn btn-outline-light">Learn More</button>
+                        <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vagrant</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#vagrantModal">Learn More</a>
+                                </div>
+                        </div>
                     </article>
                     </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="vagrantModal" tabindex="-1" role="dialog" aria-labelledby="vagrantTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="vagrantTitle">Vagrant</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
                         
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                     <article>
-                        <h5>Hyper™</h5>
-                         <span id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                         <br><button type="button" class="btn btn-outline-light">Learn More</button>
+                        <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hyper™</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#hyperModal">Learn More</a>
+                                </div>
+                        </div>
                     </article>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="hyperModal" tabindex="-1" role="dialog" aria-labelledby="hyperTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="hyperTitle">Hyper</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                         
                     </div>
                     <div class="row justify-content-md-center">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                         <article>
-                            <h5>Visual Studio Code</h5>
-                            <span id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                            <br><button type="button" class="btn btn-outline-light">Learn More</button>
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Visual Studio Code</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#visualModal">Learn More</a>
+                                </div>
+                            </div>
                         </article>
                     </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="visualModal" tabindex="-1" role="dialog" aria-labelledby="visualTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="visualTitle">Visual Studio Code</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
                             
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                     <article>
-                        <h5>Virtual Box</h5>
-                        <span id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                        <br><button type="button" class="btn btn-outline-light">Learn More</button>
+                        <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Virtual Box</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#virtualModal">Learn More</a>
+                                </div>
+                        </div>
                     </article>
                     </div>
 
-                    <div class="col-4">
+                    <!-- Modal -->
+                    <div class="modal fade" id="virtualModal" tabindex="-1" role="dialog" aria-labelledby="virtualTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="virtualTitle">Virtual Box</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                     <article>
-                        <h5>Git</h5>
-                        <span id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                        <br><button type="button" class="btn btn-outline-light">Learn More</button>
+                        <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Git</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#gitModal">Learn More</a>
+                                </div>
+                        </div>
                     </article>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="gitModal" tabindex="-1" role="dialog" aria-labelledby="gitTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="gitTitle">Git</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                 </div>      
             </div>
           </section>
+
+          <footer>
+                <div class="contact-form">
+                    <div class="container">
+                        <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <h1>Get in Touch</h1> 
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 right">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control form-control-lg"></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-block" value="Send" name="">
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+          </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

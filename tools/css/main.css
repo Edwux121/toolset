@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  background-color: #343a40; }
+  font-family: "Raleway"; }
 
-nav .form {
-  background-color: #343a40; }
+nav {
+  background-color: #00cdcf; }
+  nav a {
+    color: #FFF; }
+  nav .form {
+    background-color: #00cdcf; }
+  nav .dropdown-menu {
+    background-color: #00cdcf; }
+    nav .dropdown-menu a {
+      color: #FFF; }
 
 .carousel {
   max-height: 400px; }
@@ -12,15 +21,35 @@ nav .form {
     margin: 0px auto; }
 
 section {
-  color: #FFF; }
-  section article {
-    border: 2px solid;
-    border-radius: 5px;
-    text-align: center;
-    height: 200px;
-    margin: 7px; }
-    section article button {
-      margin-top: 35px;
+  color: #FFF;
+  background-color: #00cdcf; }
+  section .row {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  section .modal-content {
+    background-color: #343a40; }
+    section .modal-content button {
       color: #FFF; }
+    section .modal-content button:hover {
+      color: #FFF; }
+  section article:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.3s ease; }
+  section article .card-body {
+    background-color: #FFF;
+    color: #000; }
+
+footer {
+  padding-top: 80px; }
+  footer .contact-form h1 {
+    padding: 2em 1px;
+    color: #000; }
+  footer .contact-form .right {
+    max-width: 600px; }
+    footer .contact-form .right .form-control::placeholder {
+      color: #888;
+      font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */
