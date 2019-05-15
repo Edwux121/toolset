@@ -23,15 +23,25 @@ nav {
 section {
   color: #FFF;
   background-color: #00cdcf; }
+  section h2 {
+    padding-bottom: 10px;
+    border-bottom: 4px;
+    border-bottom-style: double; }
   section .row {
     padding-top: 20px;
     padding-bottom: 20px; }
-  section .modal-content {
-    background-color: #343a40; }
-    section .modal-content button {
-      color: #FFF; }
-    section .modal-content button:hover {
-      color: #FFF; }
+  section .modal-header {
+    color: #000; }
+  section .modal-body {
+    background-color: #00cdcf; }
+  section .modal-footer button {
+    background-color: #009a9c;
+    color: #FFF; }
+  section .modal-footer button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.3s ease; }
   section article:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -39,7 +49,16 @@ section {
     transition: all 0.3s ease; }
   section article .card-body {
     background-color: #FFF;
-    color: #000; }
+    color: #000;
+    border-radius: 5px; }
+    section article .card-body a {
+      background-color: #009a9c;
+      color: #FFF; }
+    section article .card-body a:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: all 0.3s ease; }
 
 footer {
   padding-top: 80px; }
@@ -51,5 +70,13 @@ footer {
     footer .contact-form .right .form-control::placeholder {
       color: #888;
       font-size: 16px; }
+  footer .submit {
+    background-color: #009a9c;
+    color: #FFF; }
+  footer .submit:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.3s ease; }
 
 /*# sourceMappingURL=main.css.map */
