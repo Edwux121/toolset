@@ -29,12 +29,21 @@ nav {
     }
 }
 
-.carousel {
+/*.carousel {
     max-height: 400px;
     img {
         width: 80%;
-        height: 300px;
+        height: 400px;
         margin: 0px auto;
+    }
+}*/
+
+
+.container {
+    .row {
+        .banner {
+            
+        }
     }
 }
 
@@ -90,13 +99,13 @@ section {
 
 footer {
     padding-top: 80px;
-    .contact-form h1{
+    .contact-form h1 {
         padding:2em 1px;
         color: #000; 
        }
-    .contact-form .right{
+    .contact-form .right {
         max-width: 600px;
-        .form-control::placeholder{
+        .form-control::placeholder {
             color: #888;
             font-size: 16px;
         }
@@ -106,7 +115,7 @@ footer {
         color: $text-color;
     }
     .submit:hover {
-        @include transform(scale(1.1));
+        @include transform(scale(1.05));
         transition: all 0.3s ease;
     }
 
