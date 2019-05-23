@@ -38,11 +38,30 @@ nav {
     }
 }*/
 
-
-.container {
-    .row {
-        .banner {
-            
+section {
+    .container-fluid {
+        .tools {
+            color: #000;
+        }
+        img {
+            max-width: 140px;
+            max-height: 140px;
+            box-sizing: unset;
+            margin: 5px;
+        }
+        img:hover {
+            @include transform(scale(1.1));
+            transition: all 0.3s ease;
+        }
+        .corporate {
+            min-height: 38px;
+        }
+        ul {
+            li {
+                a {
+                    color: #000;
+                }
+            }
         }
     }
 }
